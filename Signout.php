@@ -1,0 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION["participantID"]))
+{
+    session_destroy();
+    header("location:LoginPage.php");   
+}
+else
+{
+    header("location:LoginPage.php");
+}
+?>
